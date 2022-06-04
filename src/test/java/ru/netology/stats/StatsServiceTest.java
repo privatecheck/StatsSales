@@ -46,9 +46,9 @@ public class StatsServiceTest {
     public void shouldCalcBelowAvg() {
         StatsService service = new StatsService();
 
-        long[] sales = {166, 155, 138, 158, 179, 250, 199, 206, 455, 544, 434, 356};
+        long[] sales = { 166, 155, 138, 158, 179, 250, 199, 206, 455, 544, 434, 356 };
 
-        long actual = service.minSales(sales);
+        long actual = service.belowAvg(sales);
         long expected = 8;
 
         Assertions.assertEquals(expected, actual);
@@ -58,7 +58,7 @@ public class StatsServiceTest {
     public void minSalesMonth() {
         StatsService service = new StatsService();
 
-        long[] sales = {166, 155, 138, 158, 179, 250, 199, 206, 455, 544, 434, 356};
+        long[] sales = { 166, 155, 138, 158, 179, 250, 199, 206, 455, 544, 434, 356 };
 
         long actual = service.minSales(sales);
         long expected = 3;
@@ -70,7 +70,7 @@ public class StatsServiceTest {
     public void maxSalesMonth() {
         StatsService service = new StatsService();
 
-        long[] sales = {166, 155, 138, 158, 179, 250, 199, 206, 455, 544, 434, 356};
+        long[] sales = { 166, 155, 138, 158, 179, 250, 199, 206, 455, 544, 434, 356 };
 
         long actual = service.maxSales(sales);
         long expected = 10;
